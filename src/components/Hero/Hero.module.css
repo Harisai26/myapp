@@ -1,0 +1,104 @@
+.hero {
+  /* Set a minimum height to roughly fill the screen, subtracting the navbar's approximate height. */
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+  overflow: hidden; /* Important! Hides the marquee content before it scrolls into view. */
+}
+
+.heading {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+/* Wrapper to handle the 'hidden' part of the slide-up animation. */
+.wordWrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  margin-right: 0.5rem; /* A little space between words. */
+}
+
+.word {
+  display: inline-block;
+  transform: translateY(100%);
+  opacity: 0;
+  /* Apply the animation defined below. 'forwards' makes it stay in its final state. */
+  animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Keyframes define the animation steps. Here, we slide up and fade in. */
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.subheading {
+  font-size: 1.25rem;
+  max-width: 700px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+/* Styles for the infinite scrolling marquee */
+.marqueeContainer {
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+.marqueeContent {
+  display: flex;
+  width: fit-content; 
+  animation: scroll 40s linear infinite;
+}
+
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.client {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #888;
+  padding: 0 3rem;
+  white-space: nowrap; /* Prevents client names from breaking into multiple lines. */
+}
+
+/* Adjust font sizes for smaller screens to keep things looking good. */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 3rem;
+  }
+  .subheading {
+    font-size: 1rem;
+  }
+  .client {
+    font-size: 1.2rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+}

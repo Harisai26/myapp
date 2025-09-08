@@ -1,0 +1,103 @@
+/* Main container for the navbar, using flexbox to space everything out. */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 100; /* High z-index to ensure it stays on top of other content */
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.desktopNavLinks {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #000;
+}
+
+.talkButton {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.talkButton:hover {
+  background-color: #333;
+}
+
+/* The hamburger is hidden by default and will only be shown on smaller screens. */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles for the fullscreen mobile menu overlay */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 200; /* Even higher z-index to appear above the navbar */
+}
+
+.closeButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileNavLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mobileNavLink {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* This is our responsive breakpoint. Below 1024px, we switch to the mobile layout. */
+@media (max-width: 1024px) {
+  .desktopNavLinks {
+    display: none;
+  }
+  .talkButton {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
