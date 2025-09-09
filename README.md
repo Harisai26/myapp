@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## Leo9 Studio - Frontend Assignment
+This repository contains the source code for a frontend design assignment. The project is a responsive recreation of the hero section and navbar of the official Leo9 Studio website, built with React and modern CSS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🚀 Live Demo
+The project is deployed and live on Vercel. You can view it here:
 
-## Available Scripts
+## https://myapp-dun-one-52.vercel.app/
 
-In the project directory, you can run:
 
-### `npm start`
+✨ Features
+Fully Responsive Design: Adapts seamlessly to all screen sizes, from mobile phones to desktops.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Animated Hero Text: The main heading animates into view with a staggered slide-up effect for a dynamic feel.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Infinite Scrolling Marquee: The client logos at the bottom scroll infinitely across the screen using pure CSS animations.
 
-### `npm test`
+Functional Mobile Menu: On smaller screens, the navigation collapses into a clean, full-screen mobile menu.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Component-Based Architecture: The UI is logically separated into reusable React components (Navbar, Hero).
 
-### `npm run build`
+## 🛠️ Tech Stack
+React: A JavaScript library for building user interfaces.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+CSS Modules: For locally scoped, component-level styling to avoid class name conflicts.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Git & GitHub: Used for version control and source code management.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Vercel: For continuous deployment and hosting.
 
-### `npm run eject`
+⚙️ How to Run Locally
+To get a local copy up and running, follow these simple steps.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone [https://github.com/Harisai26/myapp.git](https://github.com/Harisai26/myapp.git)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Navigate to the project directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+cd myapp
 
-## Learn More
+## Install dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Start the development server:
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The application will be available at http://localhost:3000.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+👤 Author
+Harisai26 - GitHub Profile
